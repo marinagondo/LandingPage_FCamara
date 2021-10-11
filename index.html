@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="fontawesome/css/all.css" />
+    <link rel="shortcut icon" href="images/logo-fcamara.png" />
+
+    <title>FCamara | Volta ao presencial</title>
+  </head>
+
+  <body>
+
+<!------------------------------ HEADER ---------------------------------->    
+    <header>
+      <a href="https://www.fcamara.com.br/">
+        <img
+          class="logo"
+          src="images/Logotipo-FCamara.png"
+          alt="Logo-FCamara"
+        />
+      </a>
+      <a href="#scheduling-form">
+        <button class="cta-schedule">AGENDAR</button>
+      </a>
+    </header>
+
+    <main>
+      <!------------------------------ HERO ---------------------------------->    
+      <section class="hero">
+        <div>
+          <h1>Podemos voltar, <br>mas com segurança.</h1>
+          <p>
+          Com o avanço do programa de vacinação, reabriremos o escritório para
+          os consultores que desejarem trabalhar presencialmente.
+          </p>
+          <h3>👇🏻 Você pode escolher os dias que quiser ir!</h3>
+          <a href="#scheduling-form">
+            <button class="button-text" name="button-text">QUERO AGENDAR</button>
+          </a>
+        </div>
+      </section>
+
+      <!------------------------------ AVISO QUE É OPCIONAL ---------------------------------->    
+      <section class="optional">
+        <div>
+          <h3>Só vai quem quiser</h3>
+          <h2>O TRABALHO PRESENCIAL É OPCIONAL!</h2>
+          <img src="images/Drawkit-Illustrations-Education-1-10 1.png" alt="home-office">
+        </div>
+      </section>
+
+      <!------------------------------ CUIDADOS ---------------------------------->    
+      <section class="care">
+        <h2>Cuidados</h2>
+        <h3>
+          Para que o retorno aos escritórios seja possível, precisamos seguir
+          algumas regras.
+        </h3>
+        <div class="cards">
+          <div class="card">
+            <img src="images/ph_face-mask-light.png" alt="mask-icon">
+            <p>O uso de máscara é <u>obrigatório</u> dentro das acomodações dos
+              escritórios.</p>
+          </div>
+          <div class="card">
+            <img src="images/fontisto_thermometer-alt.png" alt="temp-icon">
+            <p>Será aferida a temperatura corporal ao chegar no escritório.</p>
+          </div>
+          <div class="card">
+            <img src="images/healthicons_social-distancing-outline.png" alt="dist-icon">
+            <p>Distanciamento dos espaços de trabalho. Adesivos vão sinalizar as
+              mesas que os #SangueLaranjas devem sentar.</p>
+          </div>
+          <div class="card">
+            <img src="images/healthicons_coughing.png" alt="">
+            <p>Caso esteja apresentando algum sintoma, não vá ao escritório. Fique em
+              casa e se cuide!</p>
+          </div>
+        </div>
+        
+      </section>
+
+      <!------------------------------ INFORMAÇÕES ---------------------------------->    
+      <section class="infos">
+        <H3>Sobre os escritórios</H3>
+        <h2>Informações importantes</h2>
+        <ul>
+          <li> 
+            ✔ Escritórios abertos: <a href="https://goo.gl/maps/HCpsSGojubfxsTYd9" target="_blank">São Paulo</a> e <a href="https://goo.gl/maps/gyeB94Uzj3zZ4vUw9" target="_blank">Santos</a>
+          </li>
+          <li>✔ Horários: 08h às 18h</li>
+          <li>✔ Capacidade máxima de cada escritório: 40% dos consultores</li>
+          <li>✔ <strong>Só poderá ir ao escritório quem agendar previamente</strong></li>
+        </ul>
+        <a href="#scheduling-form"><img src="images/down.png" alt="arrow-down"></a>
+      </section>
+
+      <!--------------------------- AGENDAMENTO FORM ----------------------------->    
+      <section id="scheduling-form">
+        <h2>Agende seu dia no escritório</h2>
+        <form action="" onsubmit="schedule()">
+          <div class="input-field">
+            <label for="email">Email corporativo</label> <br>
+            <input class="email" type="email" name="email" id="email" placeholder="Digite seu email corporativo" required>
+          </div>
+          
+          <div class="input-field">
+            <label for="office">Escritório</label> <br>
+            <input class="sp" type="radio" name="office" id="saopaulo-office" value="São Paulo" required> São Paulo <br>
+            <input class="santos" type="radio" name="office" id="santos-office" value="Santos" required> Santos
+          </div>
+     
+          <div class="input-field">
+            <label for="date">Data</label> <br>
+            <input  class="date" type="date" name="date" id="date" required>
+          </div>
+
+          <div class="input-field">
+            <label for="workstation">Estação de trabalho</label> <br>
+            <input class="workstation" type="number" name="workstation" id="workstation" max="100" min="1" placeholder="Escolha o número da mesa" required>
+          </div>
+
+          <input class="submit" type="submit" value="AGENDAR">
+        
+        </form>
+        
+      </section>
+    </main>
+
+    <!------------------------------ FOOTER ---------------------------------->    
+    <footer>
+      © 2021 Marina Gondo para FCamara <br />
+      Todos os direitos reservados
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

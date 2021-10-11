@@ -1,0 +1,287 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap');
+
+:root {
+  --purple-faded: #4B4FA1;
+  --purple-bright: #414099;
+  --orange-faded: #FC6027;
+  --orange-bright: #FE4400;
+  --orange-background: #EF653C;
+  --grey: #303033;
+  --grey-cards: #e3e3e3;
+  --grey-footer: #F4F4F4;
+  --button-fontsize: 14px;
+  --H1: 40px;
+  --H2: 32px;
+  --P: 16px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Poppins, sans-serif;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+
+/* -------------------- HEADER ---------------------- */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 10%;
+  background-color: #F4F4F4;
+  width: 100%;
+  height: 30px;
+  box-shadow: 0px 4px 15px #c4c4c4;
+}
+
+.logo {
+  height: 30px;
+}
+
+.cta-schedule {
+  cursor: pointer;
+  background-color: var(--purple-faded);
+  color: white;
+  padding: 10% 30%;
+  border-radius: 5px;
+  border: none;
+  font-size: 14px;
+}
+
+.cta-schedule:hover {
+  background-color: var(--purple-bright);
+}
+
+
+/* ---------------------------- HERO --------------------------------*/
+.hero {
+  background: url(images/background-hero.png) no-repeat center center/cover;
+  height: 80vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+}
+
+.hero div {
+  width: 50%;
+  margin-left: 10%;
+  height: 70%;
+}
+
+.hero h1 {
+  color: var(--orange-bright);
+  font-size: var(--H1);
+  padding-bottom: 0.2rem;
+}
+
+.hero p{
+  font-size: var(--P);
+}
+
+.hero h3 {
+  font-size: 14px;
+  font-weight: 600;
+  margin-top: 3rem;
+}
+
+.hero button {
+  background-color: var(--purple-faded);
+  border: none;
+  border-radius: 5px;
+  padding: 0.5rem 2rem;
+  color: white;
+  cursor: pointer;
+}
+
+.hero button:hover {
+  background-color: var(--purple-bright);
+}
+
+
+/* ---------------------- AVISO QUE É OPCIONAL --------------------- */
+
+.optional {
+  background-color: var(--orange-background);
+  height: 80%;
+}
+
+.optional div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.optional h2 {
+  font-size: var(--H2);
+  color: white;
+  text-align: center;
+}
+
+.optional h3 {
+  font-size: 14px;
+  font-weight: 500;
+  margin-top: 2rem;
+  color: white;
+}
+
+.optional img {
+  width: 25rem;
+  margin-top: 1.5rem;
+}
+
+/* ------------------------CUIDADOS -------------------------*/
+.care {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 2rem;
+}
+
+.care h2 {
+  font-size: var(--H2);
+}
+
+.care h3 {
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.cards {
+  display: flex;
+  padding: 2rem 10%;
+  margin-bottom: 1rem;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  background-color: var(--grey-cards);
+  width: 23%;
+  margin-left: 1rem;
+  padding: 0.5rem;
+  padding-bottom: 1rem;
+  border-radius: 5px;
+}
+
+.card:first-child {
+  margin-left: 0;
+}
+
+.card img {
+  padding: 1rem;
+}
+
+
+/* ------------------------ INFORMAÇÕES -------------------------*/
+.infos {
+  background-color: var(--purple-faded);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.infos h3 {
+  font-size: 14px;
+  font-weight: 500;
+  margin-top: 2rem;
+}
+
+.infos h2 {
+  margin-bottom: 1.5rem;
+  font-size: var(--H2);
+}
+
+.infos ul {
+  margin: 1rem;
+}
+
+.infos li {
+  list-style: none;
+  text-decoration: none;
+  margin: 0.8rem;
+}
+
+.infos li a {
+  text-decoration: none;
+  color:var(--orange-bright)
+}
+
+.infos li a:hover {
+  color:var(--orange-background);
+}
+
+.infos img {
+  padding-top: 2rem;
+  padding-bottom: 1rem;
+}
+
+/* ------------------------ AGENDAMENTO -------------------------*/
+#scheduling-form {
+  padding: 3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#scheduling-form h2 {
+  font-size: var(--H2);
+  margin-bottom: 2rem;
+}
+
+form {
+  background-color: white;
+  padding: 1rem;
+  width: 50%;
+  border-radius: 5px;
+  box-shadow: 0px 0px 50px #b8b7b7;
+}
+
+.input-field {
+  margin-bottom: 1.5rem;
+}
+
+input {
+  caret-color: var(--orange-bright);
+}
+
+form label {
+  font-weight: 500;
+}
+
+.email, .date, .workstation, .submit{
+  border: none;
+  background-color: #e3e3e3;
+  width: 100%;
+  height: 2rem;
+  border-radius: 5px;
+  padding-left: 1rem;
+}
+
+.submit {
+  color: white;
+  background-color: var(--orange-faded);
+  cursor: pointer;
+}
+
+.submit:hover {
+  background-color: var(--orange-bright);
+}
+
+/* ------------------------ FOOTER -------------------------*/
+footer {
+  background-color: var(--grey-footer);
+  text-align: center;
+  font-size: 14px;
+  padding: 1rem 0;
+}
+
+
+/* -------------- AJUSTE DE RESPONSIVIDADE -----------------*/
