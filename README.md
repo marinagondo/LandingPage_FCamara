@@ -1,5 +1,5 @@
 # LandingPage_FCamara
-Esse desafio fo lançado pela empresa FCamara em parceria com a Alura para criar um landing page destinada a volta ao trabalho presencial dos #SangueLaranjas.
+Esse desafio foi lançado pela empresa FCamara em parceria com a Alura para criar um landing page destinada a volta ao trabalho presencial dos #SangueLaranjas.
 
 A página foi pensada e executada para os colaboradores da FCamara, de forma que esta possa informar e servir para o agendamento de horários nos escritórios.
 
